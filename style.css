@@ -1,0 +1,114 @@
+*,
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  // font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+a,
+h1,
+h2,
+h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 87.4%;
+  margin: 24px auto;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  // transform: scale(0.488);
+  width: 82px;
+  display: block;
+  margin: auto;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  /* justify-items: center; */
+  width: 60%;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.hero {
+  width: 85.5%;
+  margin: 74px auto 0;
+}
+.hero__img {
+  background-image: url("../images/illustration-1.svg");
+  width: 100%;
+  height: 225px;
+  max-height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.hero__signup {
+  margin-top: 40px;
+}
+.hero__signup__title {
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 36px;
+}
+.hero__signup__summary {
+  font-size: 0.875rem;
+  margin-top: 24px;
+  line-height: 21px;
+  text-align: center;
+  width: 92.5%;
+}
+form {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+.email {
+  width: 304px;
+  font-size: 0.75rem;
+  padding: 12px 10px;
+  color: #c2c2c2;
+  border: 1px solid #07043b;
+  border-radius: 3.13px;
+}
+.btnSubmit {
+  width: 304px;
+  padding: 12px 10px;
+  border-radius: 3.13px;
+  outline: none;
+  border: none;
+  background-color: #2f65f8;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+.productive__btn {
+  width: 130px;
+  background-color: transparent;
+  border: none;
+}
+.productive__btn--a {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  color: #3da08f;
+}
