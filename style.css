@@ -35,7 +35,7 @@ nav {
   display: block;
   margin: auto;
 }
-ul {
+.navlist {
   display: flex;
   justify-content: space-between;
   /* justify-items: center; */
@@ -236,4 +236,69 @@ padding-left: 26px
 }
 .footer__form {
   padding-bottom: 71px;
+}
+.main__footer {
+	background-color: #07043b;
+	color: white;
+  padding-top: 65px;
+  padding-bottom: 42px;
+}
+.footer__logo__img {  
+  transform: scale(.64);
+  margin-left: 10px; 
+}
+.footer__logo__img path {
+  fill: white;
+}
+.contact {
+  margin-left: 39px;
+  margin-top: 32px;
+  margin-right: 39px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.phone__email {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	row-gap: 16px;
+	justify-content: left;
+	align-items: baseline;
+}
+.phone, .email__data {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	column-gap: 16px;
+}
+.aboutus {
+	margin-top: 32px;
+}
+.navlist__footer {
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	row-gap: 16px;
+}
+.contactus {
+	margin-top: 32px;
+	margin-bottom: 32px;
+}
+.socials {
+	display: flex;
+	column-gap: 9px;
+	width: 104px;
+	margin: auto;
+}
+.social__links {
+	width: 28.04px;
+	height: 27px;
+	border: 1px solid white;
+	margin: auto;
+	/* display: block ruby; */
+	line-height: 27px;
+	text-align: center;
+	border-radius: 50%;
 }
