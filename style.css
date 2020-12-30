@@ -9,6 +9,7 @@ body {
   // font-family: "Raleway", sans-serif;
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
 }
 a,
 h1,
@@ -17,6 +18,8 @@ h3 {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 16px;
+}
+.wrapper {
 }
 nav {
   display: flex;
@@ -58,7 +61,7 @@ a {
   background-position: 50% 50%;
 }
 .hero__signup {
-  margin-top: 40px;
+  padding-top: 40px;
 }
 .hero__signup__title {
   font-weight: 700;
@@ -69,7 +72,7 @@ a {
 }
 .hero__signup__summary {
   font-size: 0.875rem;
-  margin-top: 24px;
+  margin: 24px auto 0;
   line-height: 21px;
   text-align: center;
   width: 92.5%;
@@ -79,6 +82,7 @@ form {
   display: flex;
   flex-direction: column;
   row-gap: 12px;
+  align-items: center;
 }
 .email {
   width: 304px;
@@ -99,16 +103,137 @@ form {
   font-size: 0.875rem;
   font-weight: 700;
 }
+.productive {
+  margin-top: 105px;
+}
 .productive__btn {
   width: 130px;
   background-color: transparent;
   border: none;
+  margin: 36px auto 0;
+  display: block;
+  border-bottom: 3px solid #3da08f;
+  padding-bottom: 5px;
 }
 .productive__btn--a {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   font-size: 0.75rem;
   color: #3da08f;
+  width: 100%;
+}
+.productive__image {
+  background-image: url("./images/bg-curve-mobile.svg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 251% 100%;
+  background-position: 50% 50%;
+  position: relative;
+  padding-top: 93px;
+}
+.productive__image img {
+  width: 85.5%;
+  margin: auto;
+  display: block;
+}
+.productive__details {
+  padding-top: 87px;
+  background-color: #f8f8fe;
+  padding-bottom: 30px;
+}
+.productive__title {
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 24px;
+}
+.product__summaries {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  row-gap: 16px;
+}
+.productive__summary {
+  font-size: 0.875rem;
+  line-height: 21px;
+  width: 85.5%;
+  margin: auto;
+  text-align: center;
+  color: #615f7e;
+}
+
+.card {
+  width: 74.8%;
+  margin: 40px auto;
+  border: none; 
+  background-color: white;
+}
+.card__quorte {
+  position: relative;
+padding-top: 28px;
+padding-left: 26px
+}
+
+.card__quorte::before {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 54px;
+  background-image: url("./images/icon-quotes.svg");
+  background-repeat: no-repeat;
+  top: 25px;
+  left: 25px;
+}
+.card__quorte__summary {
+	font-size: 0.625rem;
+	letter-spacing: 0.38px;
+	line-height: 18.1px;
+  color: #04073b;
+  margin-top: 18px;
+}
+.card__profile__img {
+  width: 24px;
+  border-radius: 50%;
+  
+}
+.card__profile__title {
+	font-size: 0.56rem;
+	font-weight: 700;
+	letter-spacing: 0.45px;
+	/* line-height: auto; */
+	font-family: "Open sans", sans-serif;
+}
+.card__profile__subtitle {
+	font-size: 0.375rem;
+	letter-spacing: 0.3px;
+	line-height: 11.8px;
+}
+.card__profile {
+	width: 105px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  flex-wrap: nowrap;
+  margin-top: 12px;
+  padding-bottom: 15px;
+}
+
+.footer__signup {
+  background-color: #575988;
+  color: white;
+  
+}
+.footer__hero__signup__title {
+	padding-top: 14px;
+	font-size: 1rem;
+	line-height: 24px;
+}
+.footer__hero__signup__summary {
+	width: 74.8%;
+}
+.footer__form {
+  padding-bottom: 71px;
 }
