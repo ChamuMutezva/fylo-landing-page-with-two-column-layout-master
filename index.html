@@ -11,7 +11,7 @@
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <link rel="stylesheet" href="style.css">
@@ -25,9 +25,9 @@
           <img class="logo" src="./images/logo.svg" alt="" srcset="">
         </div>
         <ul class="navlist">
-          <li><a href="">Features</a></li>
-          <li><a href="">Team</a></li>
-          <li><a href="">Sign in</a></li>
+          <li><a class="navlist__header__links" href="">Features</a></li>
+          <li><a class="navlist__header__links" href="">Team</a></li>
+          <li><a class="navlist__header__links" href="">Sign in</a></li>
         </ul>
       </nav>
     </header>
@@ -105,16 +105,18 @@
     <footer>
       <div class="footer__signup">
         <div class="hero__signup footer__hero__signup">
-          <h2 class="hero__signup__title footer__hero__signup__title">
-            Get early access today
-          </h2>
-          <p class="hero__signup__summary footer__hero__signup__summary">
-            it only takes a minute to sign up and our free starter tier is extremely generous.
-            if you have any questions, our support team would be happy to help you.
-          </p>
+          <div class="hero__signup__info">
+            <h2 class="hero__signup__title footer__hero__signup__title">
+              Get early access today
+            </h2>
+            <p class="hero__signup__summary footer__hero__signup__summary">
+              it only takes a minute to sign up and our free starter tier is extremely generous.
+              if you have any questions, our support team would be happy to help you.
+            </p>
+          </div>
           <form class="footer__form form">
-            <input type="email" name="" id="emailAddress" class="email" placeholder="Enter your email.">
-            <input type="submit" value="Get Started For Free" class="btnSubmit">
+            <input type="email" name="" id="emailAddress" class="email footer__email" placeholder="Enter your email.">
+            <input type="submit" value="Get Started For Free" class="btnSubmit footer__btnSubmit">
           </form>
         </div>
       </div>
@@ -175,17 +177,17 @@
             </ul>
           </div>
           <div class="socials">
-          <!-- <i class="fab fa-facebook"></i> -->
-          <div class="social__links">
-            <a class="fab fa-facebook-f"></a>            
-          </div>
-          <div class="social__links">
-            <a class="fab fa-twitter"></a>            
-          </div>
-          <div class="social__links">
-            <a class="fab fa-instagram"></a>
-          </div>
-            
+            <!-- <i class="fab fa-facebook"></i> -->
+            <div class="social__links">
+              <a class="fab fa-facebook-f"></a>
+            </div>
+            <div class="social__links">
+              <a class="fab fa-twitter"></a>
+            </div>
+            <div class="social__links">
+              <a class="fab fa-instagram"></a>
+            </div>
+
 
           </div>
         </div>
