@@ -326,7 +326,9 @@ form {
   text-align: center;
   border-radius: 50%;
 }
-
+.accessCtrl {
+  display: none;
+}
 /* ==== END OF FOOTER SECTION MOBILE FIRST */
 
 
