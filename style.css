@@ -42,7 +42,13 @@ li {
 a {
   text-decoration: none;
 }
-
+label {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  display: block;
+  text-align: center;
+}
 /*==================HEADER NAV=======================*/
 .logo {
   width: 82px;
@@ -101,7 +107,7 @@ form {
   align-items: center;
 }
 .email {
-  width: 304px;
+  width: min(304px, 95%);
   font-size: 0.75rem;
   padding: 12px 10px;
   color: #c2c2c2;
@@ -336,6 +342,26 @@ form {
 .accessCtrl {
   display: none;
 }
+/* ==== VALIDATION - CONTROLS ==== */
+.errorMsg,
+.errorMsg__footer {
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: 66px;
+  color: #ef4877;
+  font-size: 0.75rem;
+  letter-spacing: 0.4px;
+}
+
+.showError {
+  display: block;
+}
+
+.btnSpacer {
+  margin-top: 20px;
+}
+/* ==== VALIDATION - CONTROLS ==== */
 
 /* ==== END OF FOOTER SECTION MOBILE FIRST */
 
@@ -348,7 +374,8 @@ form {
   color: #6c9bff;
   cursor: pointer;
 }
-.social__links:hover a, .social__links:hover {
+.social__links:hover a,
+.social__links:hover {
   border: 1px solid #6c9bff;
 }
 
@@ -482,6 +509,12 @@ form {
     line-height: 15px;
     font-weight: 400;
   }
+
+  /* ==== VALIDATION JS ===== */
+  .btnSpacer {
+    margin-top: 0px;
+  }
+  /* ====END OF VALIDATION JS ===== */
 
   /* ====END OF MAIN SECTION MEDIUM DEVICES =====*/
 
@@ -649,5 +682,14 @@ form {
   .footer__logo__img {
     transform: scale(0.816);
     margin-left: 25px;
+  }
+  /* ===== VALIDATION ======= */
+  .errorMsg {
+    top: 50px;
+    left: 50px;
+  }
+  .errorMsg__footer {
+    top: 50px;
+    left: 0px;
   }
 }

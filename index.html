@@ -48,10 +48,11 @@
           <form class="hero__form">
             <label for="emailValid">
               <input type="email" aria-label="email details" required
-              name="emailValid" id="emailValid" class="email" autocomplete="email"
+              name="emailValid" id="emailValid" class="email hero__email" autocomplete="email"
                 placeholder="Enter your email.">
+                <span class="errorMsg">Please check your email</span>
             </label>
-            <input type="submit" value="Get Started" class="btnSubmit">
+            <input type="submit" value="Get Started" class="btnSubmit btnSubmit__hero">
           </form>
         </div>
       </div>
@@ -122,6 +123,7 @@
               <input type="email" aria-label="email details" name="emailValid"
                id="emailValid2" required class="email footer__email" autocomplete="email"
                 placeholder="Enter your email.">
+                <span class="errorMsg__footer">Please check your email</span>
             </label>
             <input type="submit" value="Get Started For Free" class="btnSubmit footer__btnSubmit">
           </form>
