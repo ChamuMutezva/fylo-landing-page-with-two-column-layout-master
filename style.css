@@ -581,6 +581,14 @@ padding-top: 35px;
 .footer__email {
   width: 100%;
 }
+.main__footer {  
+  padding-top: 90px; 
+  padding-bottom: 90px; 
+}
+.footer__logo__img {
+  transform: scale(0.816);
+  margin-left: 25px;
+}
 
 }
 
