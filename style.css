@@ -359,7 +359,7 @@ justify-content: space-around;
     background-position: 50% 50%;
   }
   .hero__signup {
-    padding-top: 56px;
+    padding-top: 65px;
     width: 49%;
   }
 
@@ -452,12 +452,13 @@ justify-content: space-around;
 
 .email {
 	width: 265px;
-	padding: 21px 10px;
+	padding: 13px 10px;
 	font-size: 0.8px;
 	/* margin-left: 0; */
 }
 .btnSubmit {
   width: 200px;  
+  padding: 14px 10px;
 }
 
   .footer__form {
@@ -520,12 +521,14 @@ line-height: 60px;
 .hero__form {	
 	flex-direction: row;
 	flex-wrap: nowrap;
-	justify-content: space-between;
+	column-gap: 16px;
 }
 .email {
 	width: 320px;
 	font-size: 0.875rem;
-	padding: 21px 10px;	
+}
+.productive {
+  margin-top: 165px;
 }
 .productive__summary {  
   font-size: 1rem;  
@@ -535,7 +538,7 @@ line-height: 60px;
   padding-bottom: 0;
 }
 .btnSubmit { 
-  padding: 21px 10px;  
+ 
 }
 
 }
