@@ -1,5 +1,7 @@
 /* GENERAL RULES */
-*, html, body {
+*,
+html,
+body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -9,7 +11,6 @@
   --main-tx-color: #07043b;
   --btn-bg-color: #2f65f8;
   --main-color: #ffffff;
-
 }
 body {
   /* font-family: "Raleway", sans-serif; */
@@ -43,14 +44,14 @@ a {
 }
 
 /*==================HEADER NAV=======================*/
-.logo { 
+.logo {
   width: 82px;
   display: block;
   margin: auto;
 }
 .navlist {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   width: 176px; /* 51% mobile view */
 }
 
@@ -58,7 +59,6 @@ a {
   font-size: 0.75rem;
   color: var(--main-tx-color);
 }
-
 
 /*==================MAIN SECTION MOBILE FIRST===================*/
 /*=======HERO========*/
@@ -79,7 +79,7 @@ a {
   padding-top: 40px;
 }
 .hero__signup__title {
-  font-weight: 700;  
+  font-weight: 700;
   font-size: 1.5rem;
   text-align: center;
   line-height: 36px;
@@ -144,12 +144,12 @@ form {
   width: 100%;
 }
 .productive__container {
-  background-image: url("./images/bg-curve-mobile.svg"); 
+  background-image: url("./images/bg-curve-mobile.svg");
   background-repeat: no-repeat;
   background-size: 580% 100%;
   background-position: 50% 50%;
 }
-.productive__image {  
+.productive__image {
   width: 100%;
   position: relative;
   padding-top: 93px;
@@ -223,7 +223,7 @@ form {
 .card__profile__title {
   font-size: 0.56rem;
   font-weight: 700;
-  letter-spacing: 0.45px;  
+  letter-spacing: 0.45px;
   font-family: "Open sans", sans-serif;
 }
 .card__profile__subtitle {
@@ -332,8 +332,8 @@ form {
 .accessCtrl {
   display: none;
 }
-/* ==== END OF FOOTER SECTION MOBILE FIRST */
 
+/* ==== END OF FOOTER SECTION MOBILE FIRST */
 
 @media screen and (min-width: 578px) {
   /*====== footer section - controlled by grid auto complete===== */
@@ -345,22 +345,21 @@ form {
 }
 @media screen and (min-width: 778px) {
   /*=============== HEADER - NAV SECTION MEDIUM DEVICES =============== */
-  nav {    
+  nav {
     width: 88.9%;
-    margin: 65px auto;     
-}
-.logo {
-	width: 102px;
-}
+    margin: 65px auto;
+  }
+  .logo {
+    width: 102px;
+  }
 
-.navlist__header__links {
-	font-size: 0.9rem;
-}
-.navlist {	
-	width: 271px;
-}
-/*=============== END OF HEADER - NAV SECTION MEDIUM DEVICES =============== */
-
+  .navlist__header__links {
+    font-size: 0.9rem;
+  }
+  .navlist {
+    width: 271px;
+  }
+  /*=============== END OF HEADER - NAV SECTION MEDIUM DEVICES =============== */
 
   /*================ MAIN SECTION MEDIUM DEVICES ====================*/
   /*============== HERO SECTION MEDIUM DEVICES================= */
@@ -370,7 +369,7 @@ form {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row-reverse;
-justify-content: space-around;
+    justify-content: space-around;
   }
   .hero__img {
     background-image: url("./images/illustration-1.svg");
@@ -386,78 +385,77 @@ justify-content: space-around;
     width: 49%;
   }
 
-.hero__signup__title {
-	text-align: left;
-	font-size: 1.7rem;
-}
+  .hero__signup__title {
+    text-align: left;
+    font-size: 1.7rem;
+  }
 
-.hero__signup__summary {
-	font-size: 0.95rem;
-	text-align: left;
-	margin: 24px 0 0;
-	line-height: 24px;
-	letter-spacing: 0.53px;
-}
+  .hero__signup__summary {
+    font-size: 0.95rem;
+    text-align: left;
+    margin: 24px 0 0;
+    line-height: 24px;
+    letter-spacing: 0.53px;
+  }
 
-/* =========Productive section ========== */
-  .productive__container {   
+  /* =========Productive section ========== */
+  .productive__container {
     background-size: 580% 100%;
     background-position: 50% 50%;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row-reverse;
     justify-content: space-between;
-}
-.productive__details {  
-  padding-top: 103px;
-  background-color: inherit;
-  padding-bottom: 30px;
-  width: 45%;
-  margin-left: 80px;
-}
-.productive__title {
-  text-align: left;
-  font-size: 2rem;
-  line-height: auto;
-  color: var(--main-tx-color);
-  line-height: 40px;
-}
+  }
+  .productive__details {
+    padding-top: 103px;
+    background-color: inherit;
+    padding-bottom: 30px;
+    width: 45%;
+    margin-left: 80px;
+  }
+  .productive__title {
+    text-align: left;
+    font-size: 2rem;
+    line-height: auto;
+    color: var(--main-tx-color);
+    line-height: 40px;
+  }
 
-.productive__summary {
-  text-align: left;
-  margin-left: 0;
-  font-size: 0.95rem;
-  line-height: 24px;
-}
-.productive__image {	
-	width: 45%;	
-}
-.productive__btn {
-  margin-left: 0;
-}
-.card {
-	margin-left: 0;
-}
+  .productive__summary {
+    text-align: left;
+    margin-left: 0;
+    font-size: 0.95rem;
+    line-height: 24px;
+  }
+  .productive__image {
+    width: 45%;
+  }
+  .productive__btn {
+    margin-left: 0;
+  }
+  .card {
+    margin-left: 0;
+  }
 
-.card__quorte::before {  
-  width: 18px;
-  height: 68px;  
-}
+  .card__quorte::before {
+    width: 18px;
+    height: 68px;
+  }
 
-.card__quorte__summary {
-  font-size: 0.81rem;
-   line-height: 23px;  
-}
-.card__profile__img {
-  width: 32px; 
-}
-.card__profile {
-  width: 137px;
-  
-}
-.card__profile__title {
-  font-size: 0.69rem; 
-  letter-spacing: 0.55px;
+  .card__quorte__summary {
+    font-size: 0.81rem;
+    line-height: 23px;
+  }
+  .card__profile__img {
+    width: 32px;
+  }
+  .card__profile {
+    width: 137px;
+  }
+  .card__profile__title {
+    font-size: 0.69rem;
+    letter-spacing: 0.55px;
   }
   .card__profile__subtitle {
     font-size: 0.5rem;
@@ -482,49 +480,52 @@ justify-content: space-around;
     width: 93.3%;
     align-items: self-start;
   }
-  
+
   .email {
     width: 265px;
-    padding: 13px 10px;
+    padding: 20px 10px;
     font-size: 0.8px;
     /* margin-left: 0; */
   }
   .btnSubmit {
-    width: 200px;  
+    width: 200px;
     padding: 14px 10px;
   }
-  
 
-.footer__email {
-	width: 100%;
-}
-.footer__hero__signup {
-	width: 100%;
-	display: flex;
-	flex-wrap: nowrap;
-  justify-content: space-around;  
-  padding-bottom: 46px;
-}
-.footer__hero__signup__title {
-  padding-top: 40px;
-  font-size: 2rem;
-  line-height: 48px;
-}
-.footer__hero__signup__summary {
-  font-size: 1rem;
-}
- /* FOOTER SECTION MEDIUM DEVICES - controlled by grid auto complete */ 
-.contactus {
-  margin-top: 0;
-}
-.main__footer {
-	padding-left: 80px;
-  padding-right: 80px;
-  
+  .footer__email {
+    width: 100%;
+  }
+  .footer__hero__signup {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding-bottom: 46px;
+  }
+  .footer__hero__signup__title {
+    padding-top: 40px;
+    font-size: 2rem;
+    line-height: 48px;
+  }
+  .footer__hero__signup__summary {
+    font-size: 1rem;
+  }
+  /* FOOTER SECTION MEDIUM DEVICES - controlled by grid auto complete */
+  .contactus {
+    margin-top: 0;
+  }
+  .main__footer {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .footer__form__label {
+    width: 100%;
+  }
+
   /* ==== END OF FOOTER SECTION MEDIUM DEVICES */
 }
 @media screen and (min-width: 988px) {
-  /* footer section - controlled by grid auto complete */ 
+  /* footer section - controlled by grid auto complete */
   .socials {
     margin-top: 0;
   }
@@ -539,90 +540,89 @@ justify-content: space-around;
     font-size: 1rem;
   }
   /* ============MAIN SECTION DESKTOP =============*/
-  .hero {    
-    margin: 86px 80px 0;   
+  .hero {
+    margin: 76px 80px 0;
   }
-  .hero__signup__title {  
+  .hero__signup__title {
     font-size: 2.4rem;
-line-height: 60px;
-padding-top: 35px;
-}
-.hero__signup__summary {
-	font-size: 1.065rem;	
-}
-.hero__form {	
-	flex-direction: row;
-	flex-wrap: nowrap;
-	column-gap: 16px;
-}
-.email {
-	width: 320px;
-	font-size: 0.875rem;
-}
-.productive {
-  margin-top: 165px;
-}
-.productive__title {  
-  font-size: 2.4rem;  
-}
-.productive__details {
-  padding-top: 178px;  
-}
-.product__summaries {
-  margin-top: 38px;
+    line-height: 60px;
+    padding-top: 35px;
   }
-.productive__summary {  
-  font-size: 1rem;  
-}
-.productive__btn {
-  margin-left: 0;
-  margin-top: 15px;	
-}
-.card {	
-	margin: 45px 0;	
-}
-.card__quorte__summary {
-  width: 90%;
-}
-.card__profile { 
-  margin-top: 16px;  
-  padding-bottom: 26px;
-}
-.productive__image {
-  width: 44%;
-  padding-top: 195px;
-}
-.productive__container {
-  padding-bottom: 45px;
-}
-/* ==== END OF MAINSECTION STYLES DESKTOP ==== */
+  .hero__signup__summary {
+    font-size: 1.065rem;
+  }
+  .hero__form {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    column-gap: 16px;
+  }
+  .email {
+    width: 320px;
+    font-size: 0.875rem;
+    padding: 12px 10px;
+  }
+  .productive {
+    margin-top: 165px;
+  }
+  .productive__title {
+    font-size: 2.4rem;
+  }
+  .productive__details {
+    padding-top: 178px;
+  }
+  .product__summaries {
+    margin-top: 38px;
+  }
+  .productive__summary {
+    font-size: 1rem;
+  }
+  .productive__btn {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  .card {
+    margin: 45px 0;
+  }
+  .card__quorte__summary {
+    width: 90%;
+  }
+  .card__profile {
+    margin-top: 16px;
+    padding-bottom: 26px;
+  }
+  .productive__image {
+    width: 44%;
+    padding-top: 195px;
+  }
+  .productive__container {
+    padding-bottom: 45px;
+  }
+  /* ==== END OF MAINSECTION STYLES DESKTOP ==== */
 
-/*============ FOOTER SECTION DESKTOP========== */
-.footer__hero__signup {	
-  padding-right: 46px;
-  padding-bottom: 0;
+  /*============ FOOTER SECTION DESKTOP========== */
+  .footer__hero__signup {
+    padding-right: 46px;
+    padding-bottom: 0;
+  }
+  .footer__hero__signup__title {
+    font-size: 2rem;
+    line-height: 48px;
+  }
+  .hero__signup__info {
+    padding-bottom: 53px;
+  }
+  .footer__form {
+    margin-top: 45px;
+  }
+  .footer__email {
+    width: 100%;
+  }
+  .main__footer {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  .footer__logo__img {
+    transform: scale(0.816);
+    margin-left: 25px;
+  }
 }
-.footer__hero__signup__title {  
-  font-size: 2rem; 
-  line-height: 48px;
-}
-.hero__signup__info {  
-  padding-bottom: 53px;
-}
-.footer__form {
-  margin-top: 45px;
-}
-.footer__email {
-  width: 100%;
-}
-.main__footer {  
-  padding-top: 90px; 
-  padding-bottom: 90px; 
-}
-.footer__logo__img {
-  transform: scale(0.816);
-  margin-left: 25px;
-}
-
-}
-
