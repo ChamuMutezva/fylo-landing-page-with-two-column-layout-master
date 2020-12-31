@@ -539,6 +539,9 @@ form {
   .navlist__header__links {
     font-size: 1rem;
   }
+  .hero__signup {
+    padding-top: 40px;   
+}
   /* ============MAIN SECTION DESKTOP =============*/
   .hero {
     margin: 76px 80px 0;
