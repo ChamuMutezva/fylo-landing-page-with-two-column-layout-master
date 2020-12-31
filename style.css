@@ -311,6 +311,10 @@ form {
   margin-top: 32px;
   margin-bottom: 32px;
 }
+.contact a,
+.aboutus a {
+  color: white;
+}
 .socials {
   display: flex;
   column-gap: 9px;
@@ -334,6 +338,21 @@ form {
 }
 
 /* ==== END OF FOOTER SECTION MOBILE FIRST */
+
+/* ==== ACTIONS , HOVER, CLICKS ==== */
+.btnSubmit:hover,
+.productive__btn:hover,
+.social__links a:hover,
+.contact a:hover,
+.aboutus a:hover {
+  color: #6c9bff;
+  cursor: pointer;
+}
+.social__links:hover a, .social__links:hover {
+  border: 1px solid #6c9bff;
+}
+
+/* ==== END OF =>  ACTIONS , HOVER, CLICKS ==== */
 
 @media screen and (min-width: 578px) {
   /*====== footer section - controlled by grid auto complete===== */
@@ -484,7 +503,7 @@ form {
   .email {
     width: 265px;
     padding: 20px 10px;
-    font-size: 0.8px;
+    font-size: 0.8rem;
     /* margin-left: 0; */
   }
   .btnSubmit {
@@ -540,11 +559,11 @@ form {
     font-size: 1rem;
   }
   .hero__signup {
-    padding-top: 48px;   
-}
-form {
-	margin-top: 30px;
-}
+    padding-top: 48px;
+  }
+  form {
+    margin-top: 30px;
+  }
   /* ============MAIN SECTION DESKTOP =============*/
   .hero {
     margin: 76px 80px 0;
