@@ -556,6 +556,13 @@ line-height: 60px;
   margin-top: 16px;  
   padding-bottom: 26px;
 }
+.productive__image {
+  width: 44%;
+  padding-top: 195px;
+}
+.productive__container {
+  padding-bottom: 45px;
+}
 .footer__hero__signup {	
   padding-right: 46px;
   padding-bottom: 0;
