@@ -514,6 +514,7 @@ justify-content: space-around;
   .hero__signup__title {  
     font-size: 2.4rem;
 line-height: 60px;
+padding-top: 35px;
 }
 .hero__signup__summary {
 	font-size: 1.065rem;	
@@ -567,8 +568,18 @@ line-height: 60px;
   padding-right: 46px;
   padding-bottom: 0;
 }
-.btnSubmit { 
- 
+.footer__hero__signup__title {  
+  font-size: 2rem; 
+  line-height: 48px;
+}
+.hero__signup__info {  
+  padding-bottom: 53px;
+}
+.footer__form {
+  margin-top: 45px;
+}
+.footer__email {
+  width: 100%;
 }
 
 }
