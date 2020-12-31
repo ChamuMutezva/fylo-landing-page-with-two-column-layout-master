@@ -540,7 +540,10 @@ form {
     font-size: 1rem;
   }
   .hero__signup {
-    padding-top: 45px;   
+    padding-top: 48px;   
+}
+form {
+	margin-top: 30px;
 }
   /* ============MAIN SECTION DESKTOP =============*/
   .hero {
@@ -571,7 +574,7 @@ form {
     font-size: 2.4rem;
   }
   .productive__details {
-    padding-top: 178px;
+    padding-top: 195px;
   }
   .product__summaries {
     margin-top: 38px;
