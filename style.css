@@ -135,13 +135,7 @@ form {
   background-size: 580% 100%;
   background-position: 50% 50%;
 }
-.productive__image {
-  /*
-  background-image: url("./images/bg-curve-mobile.svg"); 
-  background-repeat: no-repeat;
-  background-size: 251% 100%;
-  background-position: 50% 50%;
-  */
+.productive__image {  
   width: 100%;
   position: relative;
   padding-top: 93px;
@@ -268,7 +262,7 @@ form {
   margin-top: 32px;
   margin-right: 39px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .phone__email {
@@ -317,13 +311,13 @@ form {
   border-radius: 50%;
 }
 
-@media screen and (min-width: 478px) {
+@media screen and (min-width: 578px) {
   /* footer section - controlled by grid auto complete */
   .aboutus {
     margin-top: 0;
   }
 }
-@media screen and (min-width: 678px) {
+@media screen and (min-width: 778px) {
   /* header and nav */
   nav {    
     width: 88.9%;
@@ -492,14 +486,14 @@ justify-content: space-around;
 	padding-left: 80px;
 	padding-right: 80px;
 }
-@media screen and (min-width: 878px) {
+@media screen and (min-width: 988px) {
   /* footer section - controlled by grid auto complete */ 
   .socials {
     margin-top: 0;
   }
 }
 
-@media screen and (min-width: 1078px) {
+@media screen and (min-width: 1128px) {
   /*header and nav */
   .logo {
     width: 166px;
