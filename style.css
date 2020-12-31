@@ -1,12 +1,18 @@
-*,
-html,
-body {
+/* GENERAL RULES */
+*, html, body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+/*variables */
+:root {
+  --main-tx-color: #07043b;
+  --btn-bg-color: #2f65f8;
+  --main-color: #ffffff;
+
+}
 body {
-  // font-family: "Raleway", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
@@ -29,28 +35,33 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
-.logo {
-  // transform: scale(0.488);
-  width: 82px;
-  display: block;
-  margin: auto;
-}
-.navlist {
-  display: flex;
-  justify-content: space-between;
-  /* justify-items: center; */
-  width: 176px; /* 51% mobile view */
-}
 li {
   list-style: none;
 }
 a {
   text-decoration: none;
 }
+
+/*==================HEADER NAV=======================*/
+.logo { 
+  width: 82px;
+  display: block;
+  margin: auto;
+}
+.navlist {
+  display: flex;
+  justify-content: space-between; 
+  width: 176px; /* 51% mobile view */
+}
+
 .navlist__header__links {
   font-size: 0.75rem;
-  color: #07043b;
+  color: var(--main-tx-color);
 }
+
+
+/*==================MAIN SECTION MOBILE FIRST===================*/
+/*=======HERO========*/
 .hero {
   width: 85.5%;
   margin: 100px auto 0;
@@ -68,8 +79,7 @@ a {
   padding-top: 40px;
 }
 .hero__signup__title {
-  font-weight: 700;
-  /*font-family: "Open Sans", sans-serif;*/
+  font-weight: 700;  
   font-size: 1.5rem;
   text-align: center;
   line-height: 36px;
@@ -82,6 +92,7 @@ a {
   width: 92.5%;
   color: #07043b;
 }
+/*====USED HERO AND  IN FOOTER AS WELL=== */
 form {
   margin-top: 32px;
   display: flex;
@@ -94,7 +105,7 @@ form {
   font-size: 0.75rem;
   padding: 12px 10px;
   color: #c2c2c2;
-  border: 1px solid #07043b;
+  border: 1px solid var(--main-tx-color);
   border-radius: 3.13px;
 }
 .btnSubmit {
@@ -103,11 +114,14 @@ form {
   border-radius: 3.13px;
   outline: none;
   border: none;
-  background-color: #2f65f8;
-  color: white;
+  background-color: var(--btn-bg-color);
+  color: var(--main-color);
   font-size: 0.875rem;
   font-weight: 700;
 }
+/*===== END OF HERO AND FOOTER STYLES ===== MOBILE FIRST*/
+
+/*=====MAIN PRODUCTIVE SECTION MOBILE FIRST === */
 .productive {
   margin-top: 105px;
 }
@@ -177,7 +191,7 @@ form {
   max-width: 356px;
   margin: 40px auto;
   border: none;
-  background-color: white;
+  background-color: var(--main-color);
 }
 .card__quorte {
   position: relative;
@@ -209,8 +223,7 @@ form {
 .card__profile__title {
   font-size: 0.56rem;
   font-weight: 700;
-  letter-spacing: 0.45px;
-  /* line-height: auto; */
+  letter-spacing: 0.45px;  
   font-family: "Open sans", sans-serif;
 }
 .card__profile__subtitle {
@@ -228,9 +241,12 @@ form {
   padding-bottom: 15px;
 }
 
+/* ======END OF MAIN PRODUCTIVE SECTION MOBILE FIRST ==== */
+
+/* =====FOOTER SECTION MOBILE FIRST=== */
 .footer__signup {
   background-color: #575988;
-  color: white;
+  color: var(--main-color);
 }
 .footer__hero__signup__title {
   padding-top: 14px;
@@ -239,14 +255,14 @@ form {
 }
 .footer__hero__signup__summary {
   width: 74.8%;
-  color: white;
+  color: var(--main-color);
 }
 .footer__form {
   padding-bottom: 71px;
 }
 .main__footer {
-  background-color: #07043b;
-  color: white;
+  background-color: var(--main-tx-color);
+  color: var(--main-color);
   padding-top: 65px;
   padding-bottom: 42px;
 }
@@ -255,8 +271,9 @@ form {
   margin-left: 10px;
 }
 .footer__logo__img path {
-  fill: white;
+  fill: var(--main-color);
 }
+
 .contact {
   margin-left: 39px;
   margin-top: 32px;
@@ -303,22 +320,26 @@ form {
 .social__links {
   width: 28.04px;
   height: 27px;
-  border: 1px solid white;
+  border: 1px solid var(--main-color);
   margin: auto;
-  /* display: block ruby; */
   line-height: 27px;
   text-align: center;
   border-radius: 50%;
 }
 
+/* ==== END OF FOOTER SECTION MOBILE FIRST */
+
+
 @media screen and (min-width: 578px) {
-  /* footer section - controlled by grid auto complete */
+  /*====== footer section - controlled by grid auto complete===== */
+  /* ==remove spave when about us moves to the top section
+  when minmax of grid reaches the max width ======*/
   .aboutus {
     margin-top: 0;
   }
 }
 @media screen and (min-width: 778px) {
-  /* header and nav */
+  /*=============== HEADER - NAV SECTION MEDIUM DEVICES =============== */
   nav {    
     width: 88.9%;
     margin: 65px auto;     
@@ -333,8 +354,11 @@ form {
 .navlist {	
 	width: 271px;
 }
-  /* Main section*/
-  /* hero section */
+/*=============== END OF HEADER - NAV SECTION MEDIUM DEVICES =============== */
+
+
+  /*================ MAIN SECTION MEDIUM DEVICES ====================*/
+  /*============== HERO SECTION MEDIUM DEVICES================= */
   .hero {
     width: 88.9%;
     margin: 86px 45px 0;
@@ -370,6 +394,7 @@ justify-content: space-around;
 	letter-spacing: 0.53px;
 }
 
+/* =========Productive section ========== */
   .productive__container {   
     background-size: 580% 100%;
     background-position: 50% 50%;
@@ -389,7 +414,7 @@ justify-content: space-around;
   text-align: left;
   font-size: 2rem;
   line-height: auto;
-  color: #07043b;
+  color: var(--main-tx-color);
   line-height: 40px;
 }
 
@@ -435,30 +460,35 @@ justify-content: space-around;
     line-height: 15px;
     font-weight: 400;
   }
-.hero__signup__info {
-  width: 45%;
-  padding-left: 46px;
-}
-.hero__form {
-	width: 93.3%;
-	align-items: self-start;
-}
 
-.email {
-	width: 265px;
-	padding: 13px 10px;
-	font-size: 0.8px;
-	/* margin-left: 0; */
-}
-.btnSubmit {
-  width: 200px;  
-  padding: 14px 10px;
-}
+  /* ====END OF MAIN SECTION MEDIUM DEVICES =====*/
+
+  /* FOOTER SECTION - FOOTER SECTION MEDIUM DEVICES */
 
   .footer__form {
     width: 33.4%;
     align-items: flex-start;
   }
+  .hero__signup__info {
+    width: 45%;
+    padding-left: 46px;
+  }
+  .hero__form {
+    width: 93.3%;
+    align-items: self-start;
+  }
+  
+  .email {
+    width: 265px;
+    padding: 13px 10px;
+    font-size: 0.8px;
+    /* margin-left: 0; */
+  }
+  .btnSubmit {
+    width: 200px;  
+    padding: 14px 10px;
+  }
+  
 
 .footer__email {
 	width: 100%;
@@ -478,13 +508,15 @@ justify-content: space-around;
 .footer__hero__signup__summary {
   font-size: 1rem;
 }
- /* footer section - controlled by grid auto complete */ 
+ /* FOOTER SECTION MEDIUM DEVICES - controlled by grid auto complete */ 
 .contactus {
   margin-top: 0;
 }
 .main__footer {
 	padding-left: 80px;
-	padding-right: 80px;
+  padding-right: 80px;
+  
+  /* ==== END OF FOOTER SECTION MEDIUM DEVICES */
 }
 @media screen and (min-width: 988px) {
   /* footer section - controlled by grid auto complete */ 
@@ -494,14 +526,14 @@ justify-content: space-around;
 }
 
 @media screen and (min-width: 1128px) {
-  /*header and nav */
+  /*=========HEADER AND NAV SECTION================ */
   .logo {
     width: 166px;
   }
   .navlist__header__links {
     font-size: 1rem;
   }
-  /*main */
+  /* ============MAIN SECTION DESKTOP =============*/
   .hero {    
     margin: 86px 80px 0;   
   }
@@ -558,6 +590,9 @@ padding-top: 35px;
 .productive__container {
   padding-bottom: 45px;
 }
+/* ==== END OF MAINSECTION STYLES DESKTOP ==== */
+
+/*============ FOOTER SECTION DESKTOP========== */
 .footer__hero__signup {	
   padding-right: 46px;
   padding-bottom: 0;
