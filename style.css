@@ -326,6 +326,9 @@ form {
   text-align: center;
   border-radius: 50%;
 }
+.social__links a {
+  color: white;
+}
 .accessCtrl {
   display: none;
 }
