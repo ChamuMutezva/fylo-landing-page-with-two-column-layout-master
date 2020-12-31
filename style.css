@@ -530,8 +530,31 @@ line-height: 60px;
 .productive {
   margin-top: 165px;
 }
+.productive__title {  
+  font-size: 2.4rem;  
+}
+.productive__details {
+  padding-top: 178px;  
+}
+.product__summaries {
+  margin-top: 38px;
+  }
 .productive__summary {  
   font-size: 1rem;  
+}
+.productive__btn {
+  margin-left: 0;
+  margin-top: 15px;	
+}
+.card {	
+	margin: 45px 0;	
+}
+.card__quorte__summary {
+  width: 90%;
+}
+.card__profile { 
+  margin-top: 16px;  
+  padding-bottom: 26px;
 }
 .footer__hero__signup {	
   padding-right: 46px;
