@@ -115,7 +115,7 @@ form {
   border-radius: 3.13px;
 }
 .btnSubmit {
-  width: 304px;
+  width: min(304px, 95%);
   padding: 12px 10px;
   border-radius: 3.13px;
   outline: none;
