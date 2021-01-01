@@ -347,8 +347,8 @@ form {
 .errorMsg__footer {
   display: none;
   position: absolute;
-  top: 45px;
-  left: 66px;
+  top: 100%;
+  left: 33%;
   color: #ef4877;
   font-size: 0.75rem;
   letter-spacing: 0.4px;
@@ -376,7 +376,8 @@ form {
 }
 .social__links:hover a,
 .social__links:hover {
-  border: 1px solid #6c9bff;
+  background-color: white;
+  color: var(--main-tx-color);
 }
 
 /* ==== END OF =>  ACTIONS , HOVER, CLICKS ==== */
@@ -435,6 +436,9 @@ form {
     text-align: left;
     font-size: 1.7rem;
   }
+  label {
+    text-align: left;
+  }
 
   .hero__signup__summary {
     font-size: 0.95rem;
@@ -462,8 +466,7 @@ form {
   }
   .productive__title {
     text-align: left;
-    font-size: 2rem;
-    line-height: auto;
+    font-size: 2rem;    
     color: var(--main-tx-color);
     line-height: 40px;
   }
@@ -512,8 +515,11 @@ form {
 
   /* ==== VALIDATION JS ===== */
   .btnSpacer {
-    margin-top: 0px;
+   /* margin-top: 0px; */
   }
+  .errorMsg, .errorMsg__footer {    
+    left: 0%;   
+}
   /* ====END OF VALIDATION JS ===== */
 
   /* ====END OF MAIN SECTION MEDIUM DEVICES =====*/
@@ -627,6 +633,7 @@ form {
   form {
     margin-top: 25px;
   }
+ 
   .productive {
     margin-top: 165px;
   }
@@ -663,6 +670,14 @@ form {
   .productive__container {
     padding-bottom: 40px;
   }
+
+  /* ==== VALIDATION STYLES *==== */
+  .btnSpacer {
+    margin-top: 0px;
+}
+/* ==== END OF VALIDATION STYLES *==== */
+
+
   /* ==== END OF MAINSECTION STYLES DESKTOP ==== */
 
   /*============ FOOTER SECTION DESKTOP========== */

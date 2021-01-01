@@ -1,41 +1,30 @@
-const forms = Array.from(document.querySelectorAll("form"));
+const forms = Array.from(document.querySelectorAll("form"))
+const inputs = Array.from(document.querySelectorAll(".email"))
+const spans = Array.from(document.querySelectorAll(".errorMsg"))
+const btns = Array.from(document.querySelectorAll("input[type='submit']"))
 
-const heroemail = document.querySelector(".hero__email")
-const footeremail = document.querySelector(".footer__email")
-
-const btnHero = document.querySelector(".btnSubmit__hero")
-const btnFooter = document.querySelector(".footer__btnSubmit")
-
-const footerSpanErr = document.querySelector(".errorMsg__footer")
-const spanErr = document.querySelector(".errorMsg")
-
-
-
-heroemail.addEventListener("invalid", () => {
-    spanErr.classList.add("showError")
-    btnHero.classList.add("btnSpacer")
+console.log(spans)
+console.log(btns)
+inputs.forEach((input, idx) => {
+    console.log(input, idx)
+    input.addEventListener("invalid", () => {
+        spans[idx].classList.add("showError")
+        btns[idx].classList.add("btnSpacer")
+    })
 })
 
-heroemail.addEventListener("input", () => {   
-    spanErr.classList.remove("showError")
-    btnHero.classList.remove("btnSpacer") 
-})
-
-
-footeremail.addEventListener("invalid", () => {
-    footerSpanErr.classList.add("showError")
-    btnFooter.classList.add("btnSpacer")
-})
-
-footeremail.addEventListener("input", () => {
-    footerSpanErr.classList.remove("showError")
-    btnFooter.classList.remove("btnSpacer")
+inputs.forEach((input, idx) => {
+    console.log(input, idx)
+    input.addEventListener("input", () => {
+        spans[idx].classList.remove("showError")
+        btns[idx].classList.remove("btnSpacer")
+    })
 })
 
 forms.forEach(form => {
-    form.addEventListener("submit", (evt) => {
-        //console.log("clicked")
+    form.addEventListener("submit", (evt) => {       
         evt.preventDefault()
         console.log("clicked")
+        alert("Thank you, your details have been saved")
     })
 })
