@@ -713,8 +713,7 @@ form {
     top: 100%;
     left: 50px;
   }
-  .errorMsg__footer {
-    top: 50px;
+  .errorMsg__footer {    
     left: 0px;
   }
   /* ===== END OF VALIDATION ======= */
