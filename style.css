@@ -710,7 +710,7 @@ form {
   }
   /* ===== VALIDATION ======= */
   .errorMsg {
-    top: 50px;
+    top: 100%;
     left: 50px;
   }
   .errorMsg__footer {
