@@ -591,12 +591,7 @@ form {
   .navlist__header__links {
     font-size: 1rem;
   }
-  .hero__signup {
-    padding-top: 48px;
-  }
-  form {
-    margin-top: 30px;
-  }
+  
   /* ============MAIN SECTION DESKTOP =============*/
   .hero {
     margin: 76px 80px 0;
@@ -604,20 +599,33 @@ form {
   .hero__signup__title {
     font-size: 2.4rem;
     line-height: 60px;
-    padding-top: 35px;
+    padding-top: 36px;
   }
+
   .hero__signup__summary {
     font-size: 1.065rem;
+    margin: 19px 0 0;
   }
   .hero__form {
+    width: 85.4%;
     flex-direction: row;
     flex-wrap: nowrap;
     column-gap: 16px;
   }
   .email {
-    width: 320px;
+    width: 100%;
     font-size: 0.875rem;
     padding: 12px 10px;
+  }
+  .label__hero {
+    text-align: left;
+    width: 320px;
+  }
+  .hero__signup {
+    padding-top: 48px;
+  }
+  form {
+    margin-top: 25px;
   }
   .productive {
     margin-top: 165px;
@@ -626,7 +634,7 @@ form {
     font-size: 2.4rem;
   }
   .productive__details {
-    padding-top: 195px;
+    padding-top: 193px;
   }
   .product__summaries {
     margin-top: 38px;
@@ -653,14 +661,14 @@ form {
     padding-top: 195px;
   }
   .productive__container {
-    padding-bottom: 45px;
+    padding-bottom: 40px;
   }
   /* ==== END OF MAINSECTION STYLES DESKTOP ==== */
 
   /*============ FOOTER SECTION DESKTOP========== */
   .footer__hero__signup {
     padding-right: 46px;
-    padding-bottom: 0;
+    padding-bottom: 22px;
   }
   .footer__hero__signup__title {
     font-size: 2rem;
@@ -668,6 +676,7 @@ form {
   }
   .hero__signup__info {
     padding-bottom: 53px;
+    padding-left: 10px;
   }
   .footer__form {
     margin-top: 45px;
@@ -676,9 +685,10 @@ form {
     width: 100%;
   }
   .main__footer {
-    padding-top: 90px;
+    padding-top: 110px;
     padding-bottom: 90px;
-  }
+    padding-left: 43px;
+}
   .footer__logo__img {
     transform: scale(0.816);
     margin-left: 25px;
@@ -692,4 +702,5 @@ form {
     top: 50px;
     left: 0px;
   }
+  /* ===== END OF VALIDATION ======= */
 }
