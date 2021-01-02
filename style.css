@@ -363,6 +363,30 @@ form {
 }
 /* ==== VALIDATION - CONTROLS ==== */
 
+/* ===== FOCUS STATE ====== */
+.footer__logo__a:focus svg path {
+  opacity: 0.4;
+}
+.logo__a:focus .logo {
+  filter: contrast(100%) opacity(50%) invert(40%) saturate(114%) sepia(86%);
+}
+.navlist__header__links:focus {
+  font-size: 0.8rem;
+  font-weight: 900;
+  opacity: 0.8;
+}
+.email:focus {
+  padding: 14px 16px;
+  border: 0.5px solid #e87979;
+}
+.btnSubmit:focus {
+	box-shadow: 1px 1px 4px 3px #97b4e1;
+}
+.productive__btn:focus span {
+	color: black;
+}
+/* ====== END FOCUS STATE ====== */
+
 /* ==== END OF FOOTER SECTION MOBILE FIRST */
 
 /* ==== ACTIONS , HOVER, CLICKS ==== */
@@ -717,6 +741,7 @@ form {
     left: 0px;
   }
   /* ===== END OF VALIDATION ======= */
+
 }
 @media screen and (min-width: 1600px) {
   .wrapper {
